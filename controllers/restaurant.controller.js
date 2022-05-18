@@ -1,5 +1,4 @@
 const { Restaurant } = require('../models/restaurant.model');
-const { User } = require('../models/user.model');
 const { Review } = require('../models/review.model');
 const { AppError } = require('../utils/appError');
 

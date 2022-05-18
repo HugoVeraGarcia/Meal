@@ -1,17 +1,9 @@
-//const bcrypt = require('bcryptjs');
-//const jwt = require('jsonwebtoken');
-//const dotenv = require('dotenv');
-//const { AppError } = require('../utils/appError');
-
 //models
-//const { User } = require('../models/user.model');
-//const { Order } = require('../models/order.model');
 const { Meal } = require('../models/meal.model');
 const { Restaurant } = require('../models/restaurant.model');
 
 // utils
 const { catchAsync } = require('../utils/catchAsync');
-//const { user } = require('pg/lib/defaults');
 
 const getAllMeal = catchAsync(async (req, res, next) => {
   const meal = await Meal.findAll({
@@ -74,7 +66,7 @@ const deleteMeal = catchAsync(async (req, res, next) => {
 
   res.status(201).json({
     status: 'success',
-    message: `Meal account has been deleted`,
+    message: `Meal has been deleted`,
   });
 });
 

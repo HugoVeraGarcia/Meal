@@ -1,5 +1,3 @@
-const { AppError } = require('../utils/appError');
-
 //models
 const { Order } = require('../models/order.model');
 const { Meal } = require('../models/meal.model');

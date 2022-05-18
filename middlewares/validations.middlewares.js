@@ -41,7 +41,6 @@ const checkValidations = (req, res, next) => {
       message: errorMsg,
     });
   }
-
   next();
 };
 
