@@ -10,6 +10,7 @@ const getAllRestaurant = catchAsync(async (req, res, next) => {
     where: { status: 'active' },
     include: {
       model: Review,
+      required: false,
       where: { status: 'active' },
       attributes: {
         exclude: ['id', 'userId', 'restaurantId', 'createdAt', 'updatedAt'],
